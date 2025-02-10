@@ -218,11 +218,17 @@ pub fn init(parent_allocator: std.mem.Allocator, env_options: EnvironmentOptions
             ),
         },
         .production => jetzig.loggers.Logger{
-            .production_logger = jetzig.loggers.ProductionLogger.init(
+            .development_logger = jetzig.loggers.DevelopmentLogger.init(
                 allocator,
                 resolveLogLevel(options.options.@"log-level", jetzig.environment),
-                log_queue,
+                stdout,
+                stderr,
             ),
+            // .production_logger = jetzig.loggers.ProductionLogger.init(
+            //     allocator,
+            //     resolveLogLevel(options.options.@"log-level", jetzig.environment),
+            //     log_queue,
+            // ),
         },
         .json => jetzig.loggers.Logger{
             .json_logger = jetzig.loggers.JsonLogger.init(
