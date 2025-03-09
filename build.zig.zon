@@ -1,7 +1,7 @@
 .{
-    .name = .jetzig,
+    .name = .jetzig_fork,
     .version = "0.0.0",
-    .fingerprint = 0x93ad8bfa2d209022,
+    .fingerprint = 0x55de464dceab7023,
     .dependencies = .{
         .jetquery = .{
             .url = "https://github.com/jetzig-framework/jetquery/archive/795136c43f6d5bd216c136748bafd22892277725.tar.gz",
