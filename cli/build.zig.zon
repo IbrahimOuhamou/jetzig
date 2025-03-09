@@ -1,16 +1,17 @@
 .{
-    .name = "jetzig-cli",
+    .name = .jetzig_cli,
+    .fingerprint = 0x73894a3e0616c96a,
     .version = "0.0.0",
     .minimum_zig_version = "0.12.0",
 
     .dependencies = .{
         .args = .{
-            .url = "https://github.com/ikskuh/zig-args/archive/0abdd6947a70e6d8cc83b66228cea614aa856206.tar.gz",
-            .hash = "1220411a8c46d95bbf3b6e2059854bcb3c5159d428814099df5294232b9980517e9c",
+            .url = "https://github.com/bobf/zig-args/archive/88cbade9a517a4014824f8f53f3c48c8a0b2ffe1.tar.gz",
+            .hash = "zig_args-0.0.0-jqtN6P_NAAC97fGpk9hS2K681jkiqPsWP6w3ucb_ctGH",
         },
         .jetquery = .{
-            .url = "https://github.com/jetzig-framework/jetquery/archive/387ad885bb29a16d38dbb71f5b4b5b083fa320e3.tar.gz",
-            .hash = "12206089a3d9de179a0d40cf35c48786eb4525a203ebf8cc131e23e430625713c402",
+            .url = "https://github.com/jetzig-framework/jetquery/archive/795136c43f6d5bd216c136748bafd22892277725.tar.gz",
+            .hash = "jetquery-0.0.0-TNf3zqZFBgDS2CaIG4DvLwaiGeAxxbfAi-DnEnSKx-mf",
         },
     },
     .paths = .{
